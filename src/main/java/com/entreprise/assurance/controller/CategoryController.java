@@ -36,7 +36,7 @@ public class CategoryController {
         return newCategory;
     }
 
-    @RequestMapping(value = "api/categories/delete", method = RequestMethod.GET)
+    @RequestMapping(value = "api/categories/delete", method = RequestMethod.DELETE)
     public void deleteCategory(@PathVariable Integer id){
         categoryService.deleteCategoryById(id);
     }
