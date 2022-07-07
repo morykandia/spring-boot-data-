@@ -45,7 +45,7 @@ public class CommentController {
         return newComment;
     }
 
-    @RequestMapping(value = "api/comments/delete", method = RequestMethod.GET)
+    @RequestMapping(value = "api/comments/delete", method = RequestMethod.DELETE)
     public void deleteComment(@PathVariable Integer id){
         commentService.deleteCommentById(id);
     }
